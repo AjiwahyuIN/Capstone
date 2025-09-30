@@ -1,13 +1,88 @@
-h1, h2, h3, h4, h5, h6 {
-    font-family: 'Inter Display', 'Inter', Arial, sans-serif;
-}
 body {
-    font-family: 'Inter', Arial, sans-serif;
-    background: #f9f9f9;
-    color: #222;
+    font-family: 'Inter', 'Clash Grotesk', Arial, sans-serif;
+    background: #fff;
     margin: 0;
-    padding: 2rem;
+    padding: 0;
 }
 h1 {
-    color: #007acc;
+    font-family: 'Inter Display', 'Inter', Arial, sans-serif;
+    font-weight: 900; /* Black */
+    font-size: 80px;
+    line-height: 1.1;
 }
+h2 {
+    font-family: 'Inter Display', 'Inter', Arial, sans-serif;
+    font-weight: 900; /* Black */
+    font-size: 60px;
+    line-height: 1.1;
+}
+h3 {
+    font-family: 'Inter Display', 'Inter', Arial, sans-serif;
+    font-weight: 900; /* Black */
+    font-size: 48px;
+    line-height: 1.1;
+}
+h4 {
+    font-family: 'Inter Display', 'Inter', Arial, sans-serif;
+    font-weight: 900; /* Black */
+    font-size: 36px;
+    line-height: 1.1;
+}
+h5 {
+    font-family: 'Inter Display', 'Inter', Arial, sans-serif;
+    font-weight: 900; /* Black */
+    font-size: 28px;
+    line-height: 1.1;
+}
+h6 {
+    font-family: 'Inter Display', 'Inter', Arial, sans-serif;
+    font-weight: 800; /* Extra Bold */
+    font-size: 24px;
+    line-height: 1.1;
+}
+h7 {
+    font-family: 'Inter Display', 'Inter', Arial, sans-serif;
+    font-weight: 800; /* Extra Bold */
+    font-size: 20px;
+    line-height: 1.1;
+}
+.container {
+    width: 1232px;
+    margin: 0 auto;
+}
+.button {
+    font-family: "Clash Grotesk";
+    border-radius: 100px;
+}
+.button-primary {
+    display: flex;
+    padding: 12px 32px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100px;
+    border: 3px solid #4D6081;
+    color: #FFF;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 124%; /* 19.84px */
+    letter-spacing: -0.2px;
+    background: radial-gradient(56.32% 88.64% at 50% 11.36%, rgba(0, 0, 0, 0.00) 0%, rgba(0, 0, 0, 0.30) 100%), #2D4F8C;
+}
+.btn-signup {
+    color: #FFF;
+    font-family: "Clash Grotesk";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 140%; /* 19.6px */
+    letter-spacing: -0.2px;
+    border-radius: 100px;
+    border: 3px solid #4D6081;
+    display: flex;
+    padding: 12px 32px;
+    justify-content: center;
+    align-items: center;
+    background: radial-gradient(56.32% 88.64% at 50% 11.36%, rgba(0, 0, 0, 0.00) 0%, rgba(0, 0, 0, 0.30) 100%), #2D4F8C;
+}
+

@@ -5,12 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Capstone</title>
     <!-- Google Fonts: Inter & Inter Display -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Inter+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Inter+Display:wght@400;500;600;700&family=Clash+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="src/organisms/Navbar.css">
+    <link rel="stylesheet" href="src/organisms/Header.css">
+    <link rel="stylesheet" href="src/organisms/Footer.css">
 </head>
 <body>
-    <h1>Capstone</h1>
-    <p>This is the Capstone project scaffold.</p>
-    <script src="script.js"></script>
+    <div id="navbar"></div>
+    <div id="header"></div>
+    <div id="footer"></div>
+        <script src="script.js"></script>
+        <script>
+            // Load section HTML files into main file
+            function loadSection(id, file) {
+                fetch(file)
+                    .then(res => res.text())
+                    .then(html => {
+                        document.getElementById(id).innerHTML = html;
+                    });
+            }
+            loadSection('navbar', 'src/organisms/Navbar.html');
+            loadSection('header', 'src/organisms/Header.html');
+            loadSection('footer', 'src/organisms/Footer.html');
+        </script>
 </body>
 </html>
