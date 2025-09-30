@@ -1,0 +1,12 @@
+/* Main Template Styles */
+.main-template {
+  max-width: 800px;
+  margin: 2rem auto;
+  background: #f9f9f9;
+  border-radius: 8px;
+  padding: 2rem;
+}
+header {
+  border-bottom: 1px solid #eee;
+  margin-bottom: 1rem;
+}

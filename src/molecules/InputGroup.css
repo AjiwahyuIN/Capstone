@@ -1,0 +1,11 @@
+/* Input Group Molecule Styles */
+.input-group {
+  display: flex;
+  gap: 0.5rem;
+}
+.input-group input {
+  flex: 1;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}

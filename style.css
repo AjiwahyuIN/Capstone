@@ -1,0 +1,13 @@
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Inter Display', 'Inter', Arial, sans-serif;
+}
+body {
+    font-family: 'Inter', Arial, sans-serif;
+    background: #f9f9f9;
+    color: #222;
+    margin: 0;
+    padding: 2rem;
+}
+h1 {
+    color: #007acc;
+}
