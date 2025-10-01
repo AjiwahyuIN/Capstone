@@ -4,18 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Capstone</title>
-    <!-- Google Fonts: Inter & Inter Display -->
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Inter+Display:wght@400;500;600;700&family=Clash+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
-        <link href="https://api.fontshare.com/v2/css?f[]=clash-grotesk@1&display=swap" rel="stylesheet">
+    <!-- Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Inter Display -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter+Display:wght@400;500;600;700&display=swap" rel="stylesheet"> 
+    <!-- Clash Grotesk (Fontshare) -->
+    <link href="https://api.fontshare.com/v2/css?f[]=clash-grotesk@400,500,600,700&display=swap" rel="stylesheet">
+
 
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/fonts/fonts.css">
     <link rel="stylesheet" href="src/organisms/Navbar.css">
     <link rel="stylesheet" href="src/organisms/Header.css">
+    <link rel="stylesheet" href="src/sections/moving-list.css">
+    <link rel="stylesheet" href="src/sections/3-value-pillars.css">
+    <link rel="stylesheet" href="src/sections/marquee-proof.css">
+    <link rel="stylesheet" href="src/sections/what-we-do.css">
     <link rel="stylesheet" href="src/organisms/Footer.css">
 </head>
 <body>
     <div id="navbar"></div>
     <div id="header"></div>
+    <div id="moving-list"></div>
+    <div id="three-value-pillars"></div>
+    <div id="marquee-proof"></div>
+    <div id="what-we-do"></div>
     <div id="footer"></div>
         <script src="script.js"></script>
         <script>
@@ -29,6 +42,10 @@
             }
             loadSection('navbar', 'src/organisms/Navbar.html');
             loadSection('header', 'src/organisms/Header.html');
+            loadSection('moving-list', 'src/sections/moving-list.html');
+            loadSection('three-value-pillars', 'src/sections/3-value-pillars.html');
+            loadSection('marquee-proof', 'src/sections/marquee-proof.html');
+            loadSection('what-we-do', 'src/sections/what-we-do.html');
             loadSection('footer', 'src/organisms/Footer.html');
         </script>
 </body>
