@@ -30,21 +30,22 @@
     <div id="marquee-proof"></div>
     <div id="what-we-do"></div>
     <div id="footer"></div>
-        <script src="script.js"></script>
+        <script src="./script.js"></script>
         <script>
             // Load section HTML files into main file
-            function loadSection(id, file) {
+            function loadSection(id, file,callback) {
                 fetch(file)
                     .then(res => res.text())
                     .then(html => {
                         document.getElementById(id).innerHTML = html;
+                        if (typeof callback === "function") callback();
                     });
             }
             loadSection('navbar', 'src/organisms/Navbar.html');
             loadSection('header', 'src/organisms/Header.html');
             loadSection('moving-list', 'src/sections/moving-list.html');
             loadSection('three-value-pillars', 'src/sections/3-value-pillars.html');
-            loadSection('marquee-proof', 'src/sections/marquee-proof.html');
+            loadSection('marquee-proof', 'src/sections/marquee-proof.html', initMarqueeSlider);
             loadSection('what-we-do', 'src/sections/what-we-do.html');
             loadSection('footer', 'src/organisms/Footer.html');
         </script>
