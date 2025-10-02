@@ -145,6 +145,9 @@
 
 /* Responsive mixin for mobile (max-width: 767px) */
 @media (max-width: 767px) {
+  .marquee-proof {
+    padding-block: 64px;
+  }
   .marquee-container {
     display: flex;
     flex-direction: column;
@@ -153,29 +156,43 @@
     width: 100% !important;
     align-items: flex-start !important;
     text-align: center !important;
+    gap: 32px;
+  }
+  .slider-proof-button-wrapper {
+    align-self: flex-end;
   }
   .slider-proof {
     width: 100%;
+    height: 400px;
     min-width: 300px;
     /* flex: 0 0 100%; */
   }
   .slider-proof-icon {
-    width: 80px;
-    height: 80px;
+    width: 64px;
+    height: 64px;
+    border-radius: 16px;
+  }
+  .slider-proof-icon img {
+    width: 32px;
+    height: 32px;
   }
   .slider-proof span {
     font-size: 20px;
     line-height: 130%; /* 31.2px */
   }
-  .slider-proof-parent {
-    flex: 0 0 100% !important;
+  .slider-proof-parent.active {
     display: flex;
-    justify-content: center;
   }
-
-  .slider-proof {
-    width: 50%; /* atau 90%, tergantung desain */
-    margin: 0 auto;
+  .slider-track {
+    margin-left: 1620px;
+  }
+  .slider-proof-button {
+    width: 48px;
+    height: 48px;
+  }
+  .slider-proof-button img {
+    width: 20px;
+    height: 20px;
   }
   
 
