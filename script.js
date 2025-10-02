@@ -67,4 +67,13 @@ function initMarqueeSlider() {
     track.style.transition = 'none';
     track.style.transform = `translateX(-${newSlideWidth * current}px)`;
   });
+
+
+
+
+
+  
 }
+
+
+

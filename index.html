@@ -11,6 +11,10 @@
     <!-- Clash Grotesk (Fontshare) -->
     <link href="https://api.fontshare.com/v2/css?f[]=clash-grotesk@400,500,600,700&display=swap" rel="stylesheet">
 
+    <!-- Slick CSS -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+
 
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="assets/fonts/fonts.css">
@@ -30,6 +34,12 @@
     <div id="marquee-proof"></div>
     <div id="what-we-do"></div>
     <div id="footer"></div>
+    <!-- jQuery (required) -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <!-- Slick JS -->
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
         <script src="./script.js"></script>
         <script>
             // Load section HTML files into main file
@@ -45,7 +55,7 @@
             loadSection('header', 'src/organisms/Header.html');
             loadSection('moving-list', 'src/sections/moving-list.html');
             loadSection('three-value-pillars', 'src/sections/3-value-pillars.html');
-            loadSection('marquee-proof', 'src/sections/marquee-proof.html', initMarqueeSlider);
+            loadSection('marquee-proof', 'src/sections/marquee-proof.html',initMarqueeSlider);
             loadSection('what-we-do', 'src/sections/what-we-do.html');
             loadSection('footer', 'src/organisms/Footer.html');
         </script>

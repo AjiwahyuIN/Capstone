@@ -141,3 +141,43 @@
 .slider-proof-parent.active .ic-proof-white{
     display: none;
 }
+
+
+/* Responsive mixin for mobile (max-width: 767px) */
+@media (max-width: 767px) {
+  .marquee-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .marquee-left {
+    width: 100% !important;
+    align-items: flex-start !important;
+    text-align: center !important;
+  }
+  .slider-proof {
+    width: 100%;
+    min-width: 300px;
+    /* flex: 0 0 100%; */
+  }
+  .slider-proof-icon {
+    width: 80px;
+    height: 80px;
+  }
+  .slider-proof span {
+    font-size: 20px;
+    line-height: 130%; /* 31.2px */
+  }
+  .slider-proof-parent {
+    flex: 0 0 100% !important;
+    display: flex;
+    justify-content: center;
+  }
+
+  .slider-proof {
+    width: 50%; /* atau 90%, tergantung desain */
+    margin: 0 auto;
+  }
+  
+
+
+}

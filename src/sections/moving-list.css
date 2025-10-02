@@ -47,3 +47,18 @@
   width: 32px;
   height: 32px;
 }
+
+/* Responsive mixin for mobile (max-width: 767px) */
+@media (max-width: 767px) {
+  .moving-list {
+    gap: 20px !important;
+  }
+  .moving-list span {
+    font-size: 20px !important;
+    letter-spacing: -1px !important;
+  }
+  .moving-list img {
+    width: 20px !important;
+    height: 20px !important;
+  }
+}

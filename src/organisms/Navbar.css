@@ -6,7 +6,28 @@
     width: 100%;
     max-width: 1440px;
 }
-
+.hamburger {
+    display: none;
+}
+@media (max-width: 767px) {
+    .logo svg {
+        width: 120px !important;
+        height: auto !important;
+    }
+  .nav-list {
+    display: none !important;
+  }
+  .navigation {
+    padding: 16px !important;
+  }
+  .navigation .btn-group {
+    display: none;
+  }
+  .hamburger {
+    display: block !important;
+    cursor: pointer;
+  }
+}
 .navigation {
     display: flex;
     padding: 16px 16px 16px 32px;
