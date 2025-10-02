@@ -5,17 +5,26 @@ body {
 }
 h1 {
     font-family: 'Inter Display', 'Inter', Arial, sans-serif;
-    font-weight: 900; /* Black */
-    font-size: 80px;
-    line-height: 1.1;
     margin: 0;
+    color: #1F1F1F;
+    text-align: center;
+    font-size: 80px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 100%; /* 80px */
+    letter-spacing: -1.7px;
+    text-transform: capitalize;
 }
 h2 {
-    font-family: 'Inter Display', 'Inter', Arial, sans-serif;
-    font-weight: 900; /* Black */
-    font-size: 60px;
-    line-height: 1.1;
+    font-family: 'Inter', Arial, sans-serif;
     margin: 0;
+    color: #1F1F1F;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 100%; /* 60px */
+    letter-spacing: -1.7px;
+    text-transform: capitalize;
 }
 h3 {
     font-family: 'Inter Display', 'Inter', Arial, sans-serif;
@@ -40,12 +49,16 @@ h6 {
     font-weight: 800; /* Extra Bold */
     font-size: 24px;
     line-height: 1.1;
+    margin: 0;
 }
 h7 {
     font-family: 'Inter Display', 'Inter', Arial, sans-serif;
     font-weight: 800; /* Extra Bold */
     font-size: 20px;
     line-height: 1.1;
+}
+p {
+    margin: 0;
 }
 .container {
     width: 1232px;

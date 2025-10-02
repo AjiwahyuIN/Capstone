@@ -18,7 +18,7 @@ header {
     max-width: 918px;
     text-align: center;
 }
-.badge {
+.header-badge {
   display: flex;
   padding: 4px 16px 4px 4px;
   align-items: center;
