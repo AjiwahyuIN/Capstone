@@ -1,9 +1,9 @@
-#moving-list {
+#moving__list {
   overflow: hidden;
   background: #fff;
 }
 
-.moving-list-wrapper {
+.moving__list-wrapper {
   width: 100%;
   overflow: hidden;
   white-space: nowrap;
@@ -14,7 +14,7 @@
   padding-block: 24px;
 }
 
-.moving-list {
+.moving__list {
   display: inline-flex;
   animation: scroll 25s linear infinite;
   align-items: center;
@@ -30,7 +30,7 @@
   }
 }
 
-.moving-list span {
+.moving__list span {
   color: #2D4F8C;
   text-align: center;
   font-family: "Inter" !important;
@@ -43,21 +43,21 @@
   white-space: nowrap;
 }
 
-.moving-list img {
+.moving__list img {
   width: 32px;
   height: 32px;
 }
 
 /* Responsive mixin for mobile (max-width: 767px) */
 @media (max-width: 767px) {
-  .moving-list {
+  .moving__list {
     gap: 20px !important;
   }
-  .moving-list span {
+  .moving__list span {
     font-size: 20px !important;
     letter-spacing: -1px !important;
   }
-  .moving-list img {
+  .moving__list img {
     width: 20px !important;
     height: 20px !important;
   }

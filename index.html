@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Capstone</title>
     <!-- Inter -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <!-- Inter Display -->
     <link href="https://fonts.googleapis.com/css2?family=Inter+Display:wght@400;500;600;700&display=swap" rel="stylesheet"> 
     <!-- Clash Grotesk (Fontshare) -->
@@ -28,6 +28,7 @@
 </head>
 <body>
     <div id="navbar"></div>
+    <!-- <div id="home"></div> -->
     <div id="header"></div>
     <div id="moving-list"></div>
     <div id="three-value-pillars"></div>
@@ -51,7 +52,8 @@
                         if (typeof callback === "function") callback();
                     });
             }
-            loadSection('navbar', 'src/organisms/Navbar.html');
+            loadSection('navbar', 'src/organisms/Navbar.html',initHideOnScroll);
+            // loadSection('home', 'src/pages/Home.html');
             loadSection('header', 'src/organisms/Header.html');
             loadSection('moving-list', 'src/sections/moving-list.html');
             loadSection('three-value-pillars', 'src/sections/3-value-pillars.html');

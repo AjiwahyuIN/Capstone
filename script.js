@@ -76,4 +76,41 @@ function initMarqueeSlider() {
 }
 
 
+// document.addEventListener('DOMContentLoaded', ()=>{
+//     let lastScrollTop = 0;
+//     let navbar = document.querySelector(".navbar");
 
+    
+//     window.addEventListener('scroll', function () {
+//         const currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+    
+//         if (Math.abs(currentScroll - lastScrollTop) > 100) {
+//             if (currentScroll > lastScrollTop) {
+//                 navbar.classList.add('hidden') ;  
+//             } else {
+//                 navbar.classList.remove('hidden');
+//             }
+//             lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
+//         }
+//     });
+// }, false);
+
+
+
+function initHideOnScroll(root){
+  const navbar = root.querySelector('.navbar'); // cari di dalam partial
+  if (!navbar) return;
+
+  let last = 0;
+  const THRESH = 100;
+
+  const onScroll = () => {
+    const cur = window.pageYOffset || document.documentElement.scrollTop || 0;
+    if (Math.abs(cur - last) <= THRESH) return;
+    if (cur > last) navbar.classList.add('hidden');
+    else            navbar.classList.remove('hidden');
+    last = cur <= 0 ? 0 : cur;
+  };
+
+  window.addEventListener('scroll', onScroll, { passive:true });
+}

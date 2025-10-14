@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Solutions</title>
+
+  <!-- Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Inter Display -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter+Display:wght@400;500;600;700&display=swap" rel="stylesheet"> 
+    <!-- Clash Grotesk (Fontshare) -->
+    <link href="https://api.fontshare.com/v2/css?f[]=clash-grotesk@400,500,600,700&display=swap" rel="stylesheet">
+
+
+  <!-- path dari src/pages/ ke root -->
+   <link rel="stylesheet" href="./Solutions.css">
+  <link rel="stylesheet" href="../../style.css">
+  <link rel="stylesheet" href="../../assets/fonts/fonts.css">
+  <link rel="stylesheet" href="../organisms/Navbar.css">
+  <link rel="stylesheet" href="../organisms/Footer.css">
+</head>
+<body>
+  <section id="navbar"></section>
+
+  
+
+  <section id="footer"></section>
+
+  <script>
+    function loadSection(id, file){
+      fetch(file).then(r=>r.text()).then(html=>{
+        const el = document.getElementById(id);
+        if (el) el.innerHTML = html;
+      });
+    }
+    // Perhatikan path: dari src/pages/ ke src/organisms/ = ../organisms/
+    loadSection('navbar','../organisms/Navbar.html');
+    loadSection('footer','../organisms/Footer.html');
+  </script>
+</body>
+</html>
