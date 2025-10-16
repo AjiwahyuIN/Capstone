@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Trust Center</title>
+
+  <!-- Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Inter Display -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter+Display:wght@400;500;600;700&display=swap" rel="stylesheet"> 
+    <!-- Clash Grotesk (Fontshare) -->
+    <link href="https://api.fontshare.com/v2/css?f[]=clash-grotesk@400,500,600,700&display=swap" rel="stylesheet">
+
+
+  <!-- path dari src/pages/ ke root -->
+   <link rel="stylesheet" href="./TrustCenter.css">
+  <link rel="stylesheet" href="../../style.css">
+  <link rel="stylesheet" href="../../assets/fonts/fonts.css">
+  <link rel="stylesheet" href="../organisms/Navbar.css">
+  <link rel="stylesheet" href="../organisms/Footer.css">
+</head>
+<body>
+  <section id="navbar"></section>
+
+  <section id="trustCenter__header">
+    <div class="container">
+        <div class="trustCenter__header">
+            <div class="content__headline" style="max-width: 550px;">
+                <div class="header__badge">
+                    <div class="badge__app">
+                        <span>Trust Center</span>
+                    </div>
+                    <div class="badge__container">
+                        <span>Security, Privacy, and Compliance</span>
+                    </div>
+                </div>
+                <div class="content__heading align-start">
+                    <div class="heading__text align-start">
+                    <h2>Our Commitment to Security and</h2>
+                    <div class="heading__text-container align-start">
+                        <h2>Data Protection</h2>
+                        <img src="../../assets/star-header.svg" alt="">
+                    </div>
+                    </div>
+                    <p class="text-left" style="max-width: 595px; letter-spacing: -0.7px;">Learn how Capstone protects your data and operations with audited controls, encryption, access governance, and incident response.</p>
+                    <a href="#" class="button btn-bookacall">Book a Discovery Call</a>
+                </div>
+            </div>
+            <img src="../../assets/header-trust.svg" alt="">
+        </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="wrapper wrapper-64">
+        <div class="contentMain__parent">
+            <div class="content__main align-start">
+                <div class="badge">
+                    <div class="badge__dots"></div>
+                    <span>Highlights</span>
+                </div>
+                <div class="section__heading">
+                    <h2>Enterprise-Grade Security Controls and Operational</h2>
+                    <div class="section__heading-container">
+                        <h2>Resilience</h2>
+                        <img src="../../assets/moving-flower.svg" alt="">
+                    </div>
+                </div>
+                <a href="#" class="button btn-bookacall">Request Our Latest Security Summary</a>
+            </div>
+            <img src="../../assets/vault 1.svg" alt="">
+        </div>
+        <div class="pillar__parent">
+                <div class="pillar__list">
+                <div class="pillar align-center">
+                    <div class="pillar__icon">
+                        <img src="../../assets/fluent_lock-closed-key-20-filled.svg" alt="">
+                    </div>
+                    <div class="pillar__content align-center">
+                        <h6>Security Controls</h6>
+                        <span class="text-center">Encryption in transit/at rest; key management; access governance; dual-control approvals.</span>
+                    </div>
+                </div>
+                <div class="pillar align-center">
+                    <div class="pillar__icon">
+                        <img src="../../assets/streamline-ultimate_file-code-check-bold.svg" alt="">
+                    </div>
+                    <div class="pillar__content align-center">
+                        <h6>Compliance Posture</h6>
+                        <span class="text-center">PCI DSS-aligned (where in scope), SOC 2/ISO 27001-ready operating model; GDPR/CCPA-aware DPA.</span>
+                    </div>
+                </div>
+            </div>
+            <div class="pillar__list">
+                <div class="pillar align-center">
+                    <div class="pillar__icon">
+                        <img src="../../assets/streamline-ultimate_monitor-warning-bold.svg" alt="">
+                    </div>
+                    <div class="pillar__content align-center">
+                        <h6>Monitoring & IR</h6>
+                        <span class="text-center">24/7 logging and alerting; documented incident response; breach notifications per applicable law.</span>
+                    </div>
+                </div>
+                <div class="pillar align-center">
+                    <div class="pillar__icon">
+                        <img src="../../assets/fa6-solid_file-shield.svg" alt="">
+                    </div>
+                    <div class="pillar__content align-center">
+                        <h6>Resilience</h6>
+                        <span class="text-center">BC/DR runbooks; tested failover; data retention to meet record keeping obligations.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+
+  <section id="footer"></section>
+
+  <script>
+    function loadSection(id, file){
+      fetch(file).then(r=>r.text()).then(html=>{
+        const el = document.getElementById(id);
+        if (el) el.innerHTML = html;
+      });
+    }
+    // Perhatikan path: dari src/pages/ ke src/organisms/ = ../organisms/
+    loadSection('navbar','../organisms/Navbar.html');
+    loadSection('footer','../organisms/Footer.html');
+  </script>
+</body>
+</html>
