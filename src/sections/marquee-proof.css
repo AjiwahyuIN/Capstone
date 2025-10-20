@@ -5,7 +5,7 @@
 }
 .marquee-proof > img {
     position: absolute;
-    bottom: -214px;
+    top: 163px;
     left: -214px;
     margin: 0 auto;
     z-index: 0;
